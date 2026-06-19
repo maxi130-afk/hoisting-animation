@@ -147,10 +147,10 @@ body{min-height:100vh;background:var(--bg-primary);color:var(--text-primary);fon
 
         <!-- ===== Ground / Earth Fill ===== -->
         <g class="layer-ground">
-          <rect x="0" y="140" width="280" height="1200" fill="url(#pat-earth)"/>
-          <rect x="520" y="140" width="280" height="1200" fill="url(#pat-earth)"/>
-          <line x1="0" y1="140" x2="280" y2="140" stroke="#5c4a32" stroke-width="2"/>
-          <line x1="520" y1="140" x2="800" y2="140" stroke="#5c4a32" stroke-width="2"/>
+          <rect x="0" y="140" width="340" height="1200" fill="url(#pat-earth)"/>
+          <rect x="460" y="140" width="340" height="1200" fill="url(#pat-earth)"/>
+          <line x1="0" y1="140" x2="340" y2="140" stroke="#5c4a32" stroke-width="2"/>
+          <line x1="460" y1="140" x2="800" y2="140" stroke="#5c4a32" stroke-width="2"/>
         </g>
 
         <!-- ===== Installation Floor ===== -->
@@ -161,51 +161,57 @@ body{min-height:100vh;background:var(--bg-primary);color:var(--text-primary);fon
 
         <!-- ===== Shaft Walls + Sump ===== -->
         <g class="layer-shaft">
-          <rect x="280" y="140" width="30" height="1200" fill="url(#pat-concrete)" stroke="#6b82a0" stroke-width="1"/>
-          <rect x="490" y="140" width="30" height="1200" fill="url(#pat-concrete)" stroke="#6b82a0" stroke-width="1"/>
-          <rect x="310" y="140" width="180" height="1200" fill="#070c16"/>
+          <rect x="340" y="140" width="15" height="1200" fill="url(#pat-concrete)" stroke="#6b82a0" stroke-width="1"/>
+          <rect x="445" y="140" width="15" height="1200" fill="url(#pat-concrete)" stroke="#6b82a0" stroke-width="1"/>
+          <rect x="355" y="140" width="90" height="1200" fill="#070c16"/>
           <!-- Shaft bottom -->
-          <line x1="280" y1="1280" x2="520" y2="1280" stroke="#6b82a0" stroke-width="1.5"/>
+          <line x1="340" y1="1280" x2="460" y2="1280" stroke="#6b82a0" stroke-width="1.5"/>
           <!-- Sump area (tail rope loop) -->
-          <rect x="310" y="1280" width="180" height="120" fill="#050810"/>
-          <line x1="280" y1="1400" x2="520" y2="1400" stroke="#6b82a0" stroke-width="1"/>
+          <rect x="355" y="1280" width="90" height="120" fill="#050810"/>
+          <line x1="340" y1="1400" x2="460" y2="1400" stroke="#6b82a0" stroke-width="1"/>
         </g>
 
         <!-- ===== Depth Markers ===== -->
         <g class="layer-depth">
-          <line x1="530" y1="160" x2="530" y2="1030" stroke="rgba(71,85,105,0.3)" stroke-width="0.5"/>
-          <line x1="525" y1="160" x2="540" y2="160" stroke="#475569" stroke-width="0.75"/>
-          <text x="545" y="164" fill="#475569" font-family="var(--font-mono)" font-size="10">0m</text>
-          <line x1="525" y1="377" x2="540" y2="377" stroke="#475569" stroke-width="0.75"/>
-          <text x="545" y="381" fill="#475569" font-family="var(--font-mono)" font-size="10">171m</text>
-          <line x1="525" y1="594" x2="540" y2="594" stroke="#475569" stroke-width="0.75"/>
-          <text x="545" y="598" fill="#475569" font-family="var(--font-mono)" font-size="10">343m</text>
-          <line x1="525" y1="812" x2="540" y2="812" stroke="#475569" stroke-width="0.75"/>
-          <text x="545" y="816" fill="#475569" font-family="var(--font-mono)" font-size="10">514m</text>
-          <line x1="525" y1="1030" x2="540" y2="1030" stroke="#475569" stroke-width="0.75"/>
-          <text x="545" y="1034" fill="#475569" font-family="var(--font-mono)" font-size="10">686m</text>
+          <line x1="470" y1="160" x2="470" y2="1030" stroke="rgba(71,85,105,0.3)" stroke-width="0.5"/>
+          <line x1="465" y1="160" x2="480" y2="160" stroke="#475569" stroke-width="0.75"/>
+          <text x="485" y="164" fill="#475569" font-family="var(--font-mono)" font-size="10">0m</text>
+          <line x1="465" y1="377" x2="480" y2="377" stroke="#475569" stroke-width="0.75"/>
+          <text x="485" y="381" fill="#475569" font-family="var(--font-mono)" font-size="10">171m</text>
+          <line x1="465" y1="594" x2="480" y2="594" stroke="#475569" stroke-width="0.75"/>
+          <text x="485" y="598" fill="#475569" font-family="var(--font-mono)" font-size="10">343m</text>
+          <line x1="465" y1="812" x2="480" y2="812" stroke="#475569" stroke-width="0.75"/>
+          <text x="485" y="816" fill="#475569" font-family="var(--font-mono)" font-size="10">514m</text>
+          <line x1="465" y1="1030" x2="480" y2="1030" stroke="#475569" stroke-width="0.75"/>
+          <text x="485" y="1034" fill="#475569" font-family="var(--font-mono)" font-size="10">686m</text>
         </g>
 
         <!-- ===== Dimension Lines ===== -->
         <g class="layer-dims">
-          <line x1="255" y1="160" x2="255" y2="1030" stroke="rgba(96,165,250,0.3)" stroke-width="0.75"
+          <line x1="315" y1="160" x2="315" y2="1030" stroke="rgba(96,165,250,0.3)" stroke-width="0.75"
                 marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
-          <text x="250" y="595" fill="rgba(96,165,250,0.6)" font-family="var(--font-mono)" font-size="10"
-                text-anchor="end" transform="rotate(-90,250,595)">H = 685.7m</text>
-          <line x1="250" y1="160" x2="260" y2="160" stroke="rgba(96,165,250,0.3)" stroke-width="0.75"/>
-          <line x1="250" y1="1030" x2="260" y2="1030" stroke="rgba(96,165,250,0.3)" stroke-width="0.75"/>
+          <text x="310" y="595" fill="rgba(96,165,250,0.6)" font-family="var(--font-mono)" font-size="10"
+                text-anchor="end" transform="rotate(-90,310,595)">H = 685.7m</text>
+          <line x1="310" y1="160" x2="320" y2="160" stroke="rgba(96,165,250,0.3)" stroke-width="0.75"/>
+          <line x1="310" y1="1030" x2="320" y2="1030" stroke="rgba(96,165,250,0.3)" stroke-width="0.75"/>
         </g>
 
         <!-- ===== Annotations ===== -->
         <g class="layer-annotations">
-          <rect x="20" y="115" width="110" height="18" rx="3" fill="rgba(10,15,26,0.85)"/>
-          <text x="26" y="128" fill="#94a3b8" font-family="var(--font-sans)" font-size="10">提升机安装层</text>
+          <rect x="20" y="54" width="110" height="18" rx="3" fill="rgba(10,15,26,0.85)"/>
+          <text x="26" y="67" fill="#94a3b8" font-family="var(--font-sans)" font-size="10">提升机安装层</text>
+          <!-- Installation centerline level (drum centerline) -->
+          <line x1="130" y1="62.6" x2="370" y2="62.6" stroke="rgba(148,163,184,0.2)" stroke-width="0.5" stroke-dasharray="4 3"/>
+          <!-- Headframe height dimension: 井口地面 → 主导轮中心线 -->
+          <line x1="205" y1="62.6" x2="205" y2="140" stroke="rgba(96,165,250,0.3)" stroke-width="0.75"
+                marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+          <text x="211" y="105" fill="rgba(96,165,250,0.6)" font-family="var(--font-mono)" font-size="10">h=61m</text>
           <rect x="20" y="145" width="100" height="18" rx="3" fill="rgba(10,15,26,0.85)"/>
           <text x="26" y="158" fill="#94a3b8" font-family="var(--font-sans)" font-size="10">井口地面 ±0.000</text>
-          <rect x="530" y="1035" width="90" height="18" rx="3" fill="rgba(10,15,26,0.85)"/>
-          <text x="536" y="1048" fill="#94a3b8" font-family="var(--font-sans)" font-size="10">井底装载位置</text>
-          <rect x="315" y="145" width="90" height="18" rx="3" fill="rgba(10,15,26,0.85)"/>
-          <text x="321" y="158" fill="#94a3b8" font-family="var(--font-sans)" font-size="10">井口卸载位置</text>
+          <rect x="470" y="1045" width="90" height="18" rx="3" fill="rgba(10,15,26,0.85)"/>
+          <text x="476" y="1058" fill="#94a3b8" font-family="var(--font-sans)" font-size="10">井底装载位置</text>
+          <rect x="345" y="145" width="80" height="18" rx="3" fill="rgba(10,15,26,0.85)"/>
+          <text x="351" y="158" fill="#94a3b8" font-family="var(--font-sans)" font-size="10">井口卸载位置</text>
           <rect x="20" y="1305" width="80" height="16" rx="3" fill="rgba(10,15,26,0.85)"/>
           <text x="26" y="1317" fill="#64748b" font-family="var(--font-sans)" font-size="9">尾绳配重环</text>
         </g>
@@ -234,12 +240,12 @@ body{min-height:100vh;background:var(--bg-primary);color:var(--text-primary);fon
           <circle cx="438" cy="118" r="3" fill="#1a2540" stroke="#a0b4cc" stroke-width="0.75"/>
         </g>
         <!-- Drum label -->
-        <rect x="468" y="20" width="100" height="18" rx="3" fill="rgba(10,15,26,0.85)"/>
-        <text x="474" y="33" fill="#94a3b8" font-family="var(--font-mono)" font-size="10">主导轮 D=5m</text>
+        <rect x="438" y="20" width="100" height="18" rx="3" fill="rgba(10,15,26,0.85)"/>
+        <text x="444" y="33" fill="#94a3b8" font-family="var(--font-mono)" font-size="10">主导轮 D=5m</text>
 
         <!-- ===== Ropes ===== -->
-        <!-- Left ropes: vertical from drum left edge (x=340) straight down to left skip -->
-        <!-- Right ropes: vertical from drum right edge (x=460) straight down to right skip -->
+        <!-- Left ropes: vertical from drum left edge (x=370) straight down to left skip -->
+        <!-- Right ropes: vertical from drum right edge (x=430) straight down to right skip -->
         <g class="layer-ropes">
           <path id="rope-left-glow" d="" fill="none" stroke="rgba(245,158,11,0.12)" stroke-width="10" stroke-linecap="round"/>
           <path id="rope-left-1" d="" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
@@ -254,31 +260,31 @@ body{min-height:100vh;background:var(--bg-primary);color:var(--text-primary);fon
           <path id="tail-rope" d="" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" opacity="0.75"/>
         </g>
 
-        <!-- ===== Left Skip (空载) — centered at x=340, width 36 ===== -->
+        <!-- ===== Left Skip (空载) — centered at x=370, width 18 ===== -->
         <g id="skip-left" transform="translate(0,0)">
-          <polygon points="330,0 350,0 356,16 324,16" fill="#3d4a5c" stroke="#8899aa" stroke-width="1"/>
-          <rect x="322" y="18" width="36" height="76" rx="4" fill="#d97706" stroke="#f59e0b" stroke-width="1.5"/>
-          <line x1="326" y1="36" x2="354" y2="36" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>
-          <line x1="326" y1="56" x2="354" y2="56" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>
-          <line x1="326" y1="76" x2="354" y2="76" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>
-          <text x="340" y="50" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">空载</text>
-          <text x="340" y="64" fill="#e2e8f0" font-size="7" text-anchor="middle">左箕斗</text>
+          <polygon points="365,0 375,0 378,16 362,16" fill="#3d4a5c" stroke="#8899aa" stroke-width="1"/>
+          <rect x="361" y="18" width="18" height="76" rx="3" fill="#d97706" stroke="#f59e0b" stroke-width="1.5"/>
+          <line x1="363" y1="36" x2="377" y2="36" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>
+          <line x1="363" y1="56" x2="377" y2="56" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>
+          <line x1="363" y1="76" x2="377" y2="76" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>
+          <text x="370" y="50" fill="#fff" font-size="7" font-weight="700" text-anchor="middle">空载</text>
+          <text x="370" y="62" fill="#e2e8f0" font-size="4.5" text-anchor="middle">左箕斗</text>
         </g>
 
-        <!-- ===== Right Skip (重载) — centered at x=460, width 36 ===== -->
+        <!-- ===== Right Skip (重载) — centered at x=430, width 18 ===== -->
         <g id="skip-right" transform="translate(0,0)">
-          <polygon points="450,0 470,0 476,16 444,16" fill="#3d4a5c" stroke="#8899aa" stroke-width="1"/>
-          <rect x="442" y="18" width="36" height="76" rx="4" fill="#16a34a" stroke="#22c55e" stroke-width="1.5"/>
-          <line x1="446" y1="36" x2="474" y2="36" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>
-          <line x1="446" y1="56" x2="474" y2="56" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>
-          <line x1="446" y1="76" x2="474" y2="76" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>
-          <text x="460" y="50" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">重载</text>
-          <text x="460" y="64" fill="#e2e8f0" font-size="7" text-anchor="middle">右箕斗</text>
+          <polygon points="425,0 435,0 438,16 422,16" fill="#3d4a5c" stroke="#8899aa" stroke-width="1"/>
+          <rect x="421" y="18" width="18" height="76" rx="3" fill="#16a34a" stroke="#22c55e" stroke-width="1.5"/>
+          <line x1="423" y1="36" x2="437" y2="36" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>
+          <line x1="423" y1="56" x2="437" y2="56" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>
+          <line x1="423" y1="76" x2="437" y2="76" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>
+          <text x="430" y="50" fill="#fff" font-size="7" font-weight="700" text-anchor="middle">重载</text>
+          <text x="430" y="62" fill="#e2e8f0" font-size="4.5" text-anchor="middle">右箕斗</text>
         </g>
 
         <!-- ===== Dynamic Annotations ===== -->
-        <text id="anno-left" x="310" y="0" fill="#94a3b8" font-family="var(--font-sans)" font-size="9" text-anchor="end"></text>
-        <text id="anno-right" x="490" y="0" fill="#94a3b8" font-family="var(--font-sans)" font-size="9"></text>
+        <text id="anno-left" x="340" y="0" fill="#94a3b8" font-family="var(--font-sans)" font-size="9" text-anchor="end"></text>
+        <text id="anno-right" x="460" y="0" fill="#94a3b8" font-family="var(--font-sans)" font-size="9"></text>
         <text id="tail-rope-label" x="400" y="0" fill="#475569" font-family="var(--font-sans)" font-size="9" text-anchor="middle">尾绳</text>
       </svg>
     </div>
@@ -356,18 +362,18 @@ const MAX_FORCE = 800;
 // Drum: center (400, 80), radius 60
 const DRUM_CX = 400;
 const DRUM_CY = 80;
-const DRUM_R = 60;
+const DRUM_R = 30;
 const DRUM_DIAMETER_REAL = 5;
 const DRUM_CIRCUMFERENCE = Math.PI * DRUM_DIAMETER_REAL;
 
 // Rope departure: from drum left/right edges, VERTICALLY downward
-const LEFT_ROPE_X = DRUM_CX - DRUM_R;   // 340
-const RIGHT_ROPE_X = DRUM_CX + DRUM_R;  // 460
-const ROPE_TOP_Y = DRUM_CY;              // 80 — ropes leave from drum center height (sides)
+const LEFT_ROPE_X = DRUM_CX - DRUM_R;   // 370
+const RIGHT_ROPE_X = DRUM_CX + DRUM_R;  // 430
+// ROPE_TOP_Y is set below, after METERS_PER_SVG (depends on headframe height)
 
 // Skip positions — centered directly below rope departure points
-const LEFT_SKIP_CX = 340;
-const RIGHT_SKIP_CX = 460;
+const LEFT_SKIP_CX = 370;
+const RIGHT_SKIP_CX = 430;
 const SKIP_HEIGHT = 94; // connector(16) + body(76) + gap(2)
 
 // Shaft: skip travel zone
@@ -376,9 +382,16 @@ const SHAFT_BOTTOM = 1030; // SVG Y for skip bottom position (distance=685.7m)
 const SHAFT_RANGE = SHAFT_BOTTOM - SHAFT_TOP; // 870
 const METERS_PER_SVG = TOTAL_DISTANCE / SHAFT_RANGE; // ~0.788 m per SVG unit
 
+// Headframe: drum centerline height above 井口地面 (tower hoist, 60–80m range)
+const GROUND_Y = 140;                              // SVG y of 井口地面
+const HEADFRAME_HEIGHT_M = 61;                     // 主导轮中心线距井口地面高度
+const DRUM_DY = GROUND_Y - HEADFRAME_HEIGHT_M / METERS_PER_SVG - DRUM_CY; // shift so centerline = 61m above ground
+const DRUM_CY_WORLD = DRUM_CY + DRUM_DY;           // world y of drum centerline
+const ROPE_TOP_Y = DRUM_CY_WORLD;                  // ropes leave drum at centerline height
+
 // Tail rope (balance rope): fixed total length, hangs as catenary under gravity
 // Total length ≈ shaft depth + loop below shaft bottom (72m for counterweight loop)
-const TAIL_ROPE_LENGTH_M = TOTAL_DISTANCE + 112; // ~798m
+const TAIL_ROPE_LENGTH_M = TOTAL_DISTANCE + 162; // ~848m
 const TAIL_ROPE_LENGTH_SVG = TAIL_ROPE_LENGTH_M / METERS_PER_SVG; // ~962 SVG units
 
 // Time boundaries
@@ -558,7 +571,7 @@ function computeTailRope(leftBottomY, rightBottomY) {
   const rx = RIGHT_SKIP_CX;
   const ly = leftBottomY;
   const ry = rightBottomY;
-  const d = rx - lx;               // horizontal span (240 SVG units)
+  const d = rx - lx;               // horizontal span (60 SVG units)
   const L = TAIL_ROPE_LENGTH_SVG;  // fixed rope length in SVG units
 
   // Solve for catenary parameter 'a' using bisection
@@ -623,7 +636,7 @@ let drumRotation = 0;
 function applyFrame(state) {
   // Drum rotation: simple speed-based accumulation (matching reference: speed × 0.3 per frame)
   drumRotation += state.speed * 0.3;
-  dom.drum.setAttribute('transform', `rotate(${drumRotation}, ${DRUM_CX}, ${DRUM_CY})`);
+  dom.drum.setAttribute('transform', `translate(0, ${DRUM_DY}) translate(${DRUM_CX},${DRUM_CY}) scale(0.5) translate(${-DRUM_CX},${-DRUM_CY}) rotate(${drumRotation}, ${DRUM_CX}, ${DRUM_CY})`);
 
   // Skip positions: left descends, right ascends
   const leftDist = state.distance;
